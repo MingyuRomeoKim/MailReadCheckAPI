@@ -1,5 +1,4 @@
 # Mail 단건 전송시, 메일 읽음 확인용 API 
-
 - When your send email to user, the image source code in email html
 
 # description
@@ -8,3 +7,4 @@
 - 발송된 이메일 내부에 심어져있는 img source가 로딩될 시 해당 API를 호출하게 됨.
 - 형식은 <img src = http://127.0.0.1:8001/api/mail/readReceipt/eyJpdiI6InlSa0hhcnYrd1hDcnRCQ3RKTElxV1E9PSIsInZhbHVlIjoiUkNSMnB3Smwvb0tqUFdzbnBxMDdKdz09IiwibWFjIjoiNWU1MDhhOTg2MjM4OWMxZmExMDJlM2I4YjE5NThkMTJlMTdkYWZmMjc4Y2EzZWJiMzhjNDlkYmY1ZmEzNDA3MyIsInRhZyI6IiJ9.jpg />
 - model의 database table은 유동적으로 사용하고자 하는것들로 체인지
+- Contoller에 보면 이미지 다운받는 로직이 있음. storage에 각자 1pixel 정도 되는 아무 이미지(로딩확인용) 업로드하면 됨.
